@@ -22,9 +22,9 @@ prepare_analysis <- function (dataDirectory = "UCI HAR Dataset"){
 	activityFile 	<- c("test/Y_test.txt", "train/Y_train.txt")
 	subjectFile 	<- c("test/subject_test.txt", "train/subject_train.txt")
 	
-	dataFile 	<- paste(dataDirectory,dataFile, sep="/" )
+	dataFile 	 <- paste(dataDirectory,dataFile, sep="/" )
 	activityFile <- paste(dataDirectory,activityFile, sep="/" )
-	subjectFile <-  paste(dataDirectory,subjectFile, sep="/" )
+	subjectFile  <-  paste(dataDirectory,subjectFile, sep="/" )
 
 	if(sum(file.exists(dataFile)) != length(dataFile)) stop(paste(dataFile , msg));
 	if(sum(file.exists(activityFile)) != length(activityFile)) stop(paste(activityFile, msg));
