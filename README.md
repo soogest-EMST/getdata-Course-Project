@@ -1,10 +1,11 @@
 # getdata Course Project
 
+## Content
 As requested, I created one R script called run_analysis.R 
 This file contains 2 functions
 
 1. prepare_analysis
-This function is used to read the Data from the specified dataDirectory
+This function is used to read the Data from the specified dataDirectory (defaulted to "UCI HAR Dataset")
 to put together (cbind) the 3 Data files and merging the results
 It returns the preparedDataSet as a table
 This corresponds to steps 1 to 4 from the assignment
@@ -20,3 +21,6 @@ Which takes as first argument a preparedDataSet by the previous function
 This corresponds to step 5
     From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+## Usage
+The file doesn't run any script, it just declares the functions.
+It ends with 2 commented lines, which, uncommented, should run the simulation with the default parameters.
